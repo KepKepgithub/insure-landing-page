@@ -1,0 +1,125 @@
+@media only screen and (min-width:300px){
+    .menu{
+        width: 100%;
+        height: 587px;
+        background-color: $very_dark_violet;
+        padding: 1.5em 1.5em 0em 1.5em;
+
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        list-style: none;
+
+        height: 0;
+        overflow: hidden;
+        padding-top: 0;
+        transition: all 250ms ease;
+
+        &__checkbox{
+            display: none;
+        }
+        &__icon_close,&__icon_open{
+            cursor: pointer;
+            width: 32px;
+            margin:0;
+            padding: 0;
+        }
+        &__icon_close{
+            display: none;
+        }
+        &__item{
+            color: $light_gray;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+
+            width: 100%;
+            padding: .75em 0;
+            margin-bottom: 4px;
+            display: grid;
+            place-items: center center;
+            border: 2px solid $very_dark_violet;
+
+            transition: all 250ms ease;
+            &:hover,&:active{
+                border: 2px solid $light_gray;
+                cursor: pointer;
+            }
+        }
+        &__pattern{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        &__item,&__pattern{
+            opacity: 0;
+        }
+        &__checkbox:checked ~ label{
+            .menu__icon_close{
+                display: block;
+                // for some reason the close button was bouncing down when called so added negative margin to place it where it should be;
+                margin-top: -4px;
+            }
+            .menu__icon_open{
+                display: none;
+            }
+        }
+        &__checkbox:checked ~ .menu{
+            height: 587px;
+            padding-top: 1.5em;
+
+            .menu__item,.menu__pattern{
+                opacity: 1;
+            }
+            // applied transition only here so the pattern dissapears instantly if menu closed
+            .menu__pattern{
+                transition: all 1500ms ease;
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width:1440px){
+    // Checkbox also needs to be selected in case user re-sizes and forgets to uncheck.
+    .menu, #menu__checkbox:checked ~ .menu{
+        position: initial;
+        top: initial;
+        bottom: initial;
+        width: auto;
+        height:auto;
+        background-color: transparent;
+        padding:0;
+        margin:0;
+        display: flex;
+        // negative margin to offset the buttons padding and align everything how it should be
+        margin-right: -1em;
+        &__item{
+            opacity: 1;
+            color: $dark_gray;
+            border: none;
+            margin: 0;
+            padding: 0;
+            font-size: 0.9rem;
+            width: auto;
+            transition: all 100ms ease;
+            padding: 0.5em 1em;
+            &:hover{
+                border: none;
+                color: $very_dark_violet;
+            }
+            &:active{
+                background-color: $very_dark_violet;
+                color: $light_gray;
+            }
+        }
+        &__pattern{
+            display: none;
+        }
+        &__label{
+            display: none;
+        }
+    }
+}

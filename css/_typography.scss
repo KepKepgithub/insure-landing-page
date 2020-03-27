@@ -1,0 +1,26 @@
+// ## Typography
+
+// ### Body Copy
+// - Font size: 16px
+body{
+    font-size: 16px;
+}
+
+
+// ### Body
+// - Family: [Karla](https://fonts.google.com/specimen/Karla)
+// - Weights: 400, 700
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+
+// ### Headings
+// - Family: [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
+// - Weights: 400
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
