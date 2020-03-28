@@ -1,0 +1,56 @@
+@media only screen and (min-width:300px){
+    .intro{
+        position: relative;
+        &__img_desktop{
+            display: none;
+        }
+        &__img_mobile{
+            position: absolute;
+            left: 0;
+        }
+        &__desktop_pattern{
+            display: none;
+        }
+        &__mobile_pattern{
+            position: absolute;
+            top: 451px;
+            z-index: -2;
+            &--left{
+                left: 0;
+            }
+            &--right{
+                right: 0;
+                top: unset;
+                bottom: -20%;
+                z-index: 1;
+            }
+        }
+        &__text_wrap{
+            // has to be at least 28rem to move it out of the images way;
+            padding-top: 28rem;
+            color: $light_gray;
+            text-align: center;
+        }
+        &__heading{
+            padding-top: 6rem;
+            font-size: 2.95rem;
+            line-height: 3rem;
+
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        &__paragraph{
+            margin-bottom: 2rem;
+        }
+        &__button{
+            text-transform: uppercase;
+            padding: .5em 2.25em;
+            border: 2px solid $light_gray;
+            color: $light_gray;
+            background-color: transparent;
+            cursor: pointer;
+
+            margin-bottom: 5rem;
+        }
+    }
+}
