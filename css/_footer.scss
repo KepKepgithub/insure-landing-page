@@ -7,8 +7,7 @@
             &--desktop{
                 display: none;
             }
-            &--mobile{
-                left: 0;
+            &--mobile{ 
                 top: 0;
             }
         }
@@ -40,6 +39,18 @@
             width: 50%;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+        &__icon:hover,&__icon:active{
+            cursor: pointer;
+            path{
+                fill: $very_dark_violet;
+            }
+        }
+        &__link_wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

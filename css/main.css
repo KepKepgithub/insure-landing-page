@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 375px;
     width: 100%;
     margin: auto;
+    overflow: hidden;
   }
   .page_wrap header, .page_wrap section, .page_wrap footer {
     padding-left: 1.5rem;
@@ -279,6 +280,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .main__pattern {
     position: absolute;
+    pointer-events: none;
   }
   .main__pattern--desktop {
     display: none;
@@ -316,7 +318,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .footer__pattern--mobile {
-    left: 0;
     top: 0;
   }
   .footer__logo, .footer__social_wrap {
@@ -357,6 +358,27 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__icon:hover, .footer__icon:active {
+    cursor: pointer;
+  }
+  .footer__icon:hover path, .footer__icon:active path {
+    fill: #2b272f;
+  }
+  .footer__link_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -42,6 +42,7 @@
         }
         &__pattern{
             position: absolute;
+            pointer-events: none;
             &--desktop{
                 display: none;
             }
