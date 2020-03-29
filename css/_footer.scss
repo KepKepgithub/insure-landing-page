@@ -51,6 +51,34 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+
+            padding-bottom: 5rem;
+        }
+        &__heading{
+            color: $dark_gray;
+            text-transform: uppercase;
+            font-family: 'Karla', sans-serif;
+            font-weight: bold;
+
+            margin-bottom: 2rem;
+        }
+        &__link_section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+        &__link{
+            text-decoration: none;
+            color: $very_dark_violet;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            &:hover{
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+            }
         }
     }
 }
