@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1400px) {
   .page_wrap {
     max-width: 1440px;
   }
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (min-width: 1435px) {
+@media only screen and (min-width: 1400px) {
   .menu, #menu__checkbox:checked ~ .menu {
     position: initial;
     top: initial;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (min-width: 1435px) {
+@media only screen and (min-width: 1400px) {
   .intro__img_desktop {
     display: block;
     position: absolute;
@@ -377,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (min-width: 1435px) {
+@media only screen and (min-width: 1400px) {
   .main {
     padding-top: 23rem;
   }
@@ -548,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (min-width: 1435px) {
+@media only screen and (min-width: 1400px) {
   .footer__social {
     padding-top: 4rem;
     -webkit-box-orient: horizontal;
