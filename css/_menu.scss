@@ -118,6 +118,16 @@
                 background-color: $very_dark_violet;
                 color: $light_gray;
             }
+            &:nth-child(4){
+                border: 2px solid $very_dark_violet;
+                color: $very_dark_violet;
+                &:hover{
+                    border: 2px solid $very_dark_violet;
+                }
+                &:active{
+                    color: $light_gray;
+                }
+            }
         }
         &__pattern{
             display: none;
