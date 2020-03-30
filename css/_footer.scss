@@ -75,10 +75,48 @@
             color: $very_dark_violet;
             font-weight: bold;
             margin-bottom: 1rem;
-            &:hover{
+            &:hover,&:active{
                 text-decoration: underline;
                 text-decoration-thickness: 2px;
             }
+        }
+    }
+}
+
+
+@media only screen and (min-width:1440px){
+    .footer{
+        &__social{
+            padding-top: 4rem;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__social_wrap{
+            width: 14%;
+        }
+        &__logo{
+            margin: 0;
+        }
+        &__pattern{
+            &--desktop{
+                display: block;
+                top: 0;
+                left: -10rem;
+            }
+            &--mobile{
+                display: none;
+            }
+        }
+        &__link_wrap{
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            z-index: 10;
+            padding-bottom: 1.5rem;
+        }
+        &__link_section{
+            align-items: flex-start;
         }
     }
 }

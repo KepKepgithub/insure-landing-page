@@ -107,6 +107,9 @@
             width: auto;
             transition: all 100ms ease;
             padding: 0.5em 1em;
+            &::selection{
+                background-color: transparent;
+            }
             &:hover{
                 border: none;
                 color: $very_dark_violet;

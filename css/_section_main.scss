@@ -59,12 +59,73 @@
         &__button{
             background-color: transparent;
             color: $light_gray;
+            background-color: $dark_violet;
             border: 2px solid $light_gray;
             text-transform: uppercase;
             letter-spacing: 0.07rem;
             font-weight: bold;
             padding: 0.5em 2em;
             cursor: pointer;
+
+            &:hover,&:active{
+                background-color: $light_gray;
+                color: $dark_violet;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1440px){
+    .main{
+        padding-top: 23rem;
+        &::before{
+            top: 27%;
+            left: 11%;
+            width: 10%;
+        }
+        &__article_wrap{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__heading{
+            text-align: left;
+            font-size: 4rem;
+            &--small{
+                font-size: 2rem;
+            }
+            &--white{
+                width: 50%;
+                font-size: 3.5rem;
+                margin: 0;
+            }
+
+        }
+        &__article{
+            text-align: left;
+            margin: 0;
+            width: 32%;
+            margin-bottom: 10rem;
+        }
+        &__pattern{
+            &--desktop{
+                display: block;
+                top: 0;
+                right: 0;
+            }
+            &--mobile{
+                display: none;
+            }
+        }
+        &__cta{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 4rem;
+        }
+        &__button{
+            position: relative;
+            z-index: 10;
+            padding: 0.75em 1.75em;
         }
     }
 }
