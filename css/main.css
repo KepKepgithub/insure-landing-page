@@ -250,6 +250,19 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width: 1024px) {
   .intro__img_desktop {
+    max-width: 512px;
+    width: 35.5%;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .intro__img_desktop {
+    width: 512px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .intro__img_desktop {
     display: block;
     position: absolute;
     right: 10rem;
