@@ -1,0 +1,13 @@
+.attribution{
+    text-align: center;
+    background-color: $light_gray;
+    color: $very_dark_violet;
+    padding:0 2rem 2rem 2rem;
+    a{
+        text-decoration: none;
+        color: rgb(4, 128, 86);
+        &:hover,&:active{
+            text-decoration: underline;
+        }
+    }
+}

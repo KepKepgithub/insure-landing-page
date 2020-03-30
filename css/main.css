@@ -586,12 +586,28 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: space-between;
     position: relative;
     z-index: 10;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0rem;
   }
   .footer__link_section {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
+}
+
+.attribution {
+  text-align: center;
+  background-color: #fafafa;
+  color: #2b272f;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #048056;
+}
+
+.attribution a:hover, .attribution a:active {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
